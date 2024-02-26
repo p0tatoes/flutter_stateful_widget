@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stateful_widgets/widgets/appbar_header.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
@@ -8,10 +9,7 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: const Text(
-          "STATEFUL WIDGETS - SECOND SCREEN",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
-        ),
+        title: const AppBarHeader(title: "STATEFUL WIDGETS - SECOND SCREEN"),
         backgroundColor: Colors.deepPurple[900],
       ),
       body: Center(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stateful_widgets/screens/secondScreen.dart';
 import 'package:stateful_widgets/screens/thirdSceen.dart';
+import 'package:stateful_widgets/widgets/appbar_header.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,10 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: const Text(
-          "STATEFUL WIDGETS",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
-        ),
+        title: const AppBarHeader(title: "stateful widgets"),
         backgroundColor: Colors.deepPurple[900],
       ),
       body: Center(
