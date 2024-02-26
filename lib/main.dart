@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stateful_widgets/screens/secondScreen.dart';
+import 'package:stateful_widgets/screens/thirdSceen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => const HomeScreen(),
         '/second': (context) => const SecondScreen(),
+        '/third': (context) => const ThirdScreen(),
       },
     );
   }

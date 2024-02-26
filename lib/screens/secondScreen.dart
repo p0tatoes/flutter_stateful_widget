@@ -14,6 +14,15 @@ class SecondScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.deepPurple[900],
       ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamedAndRemoveUntil(
+                context, "/third", ModalRoute.withName("/"));
+          },
+          child: Text("to Third Screen"),
+        ),
+      ),
     );
   }
 }
